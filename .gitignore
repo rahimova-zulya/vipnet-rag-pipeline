@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Игнорировать папку с индексами и данными
+rag_index/
+!rag_index/.gitkeep
+
+# Игнорировать чанки, эмбеддинги и индексы
+*.pkl
+*.npy
+*.index
+*.json
+!doc_01_chunks.json   # если хотите сохранить пример чанков (опционально)
+
+# Игнорировать локально скачанные модели
+*.gguf
+*.bin
+*.safetensors
+
+# Логи и конфиги (если есть)
+.env
+*.log
